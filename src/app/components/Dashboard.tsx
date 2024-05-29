@@ -56,7 +56,7 @@ export default function Dashboard() {
               <span className="text-5xl w-50">{count}</span>
               <p className="">Done</p>
             </div>
-            <div className="px-4 py-4">
+            <div className="px-4 py-16">
               <b className="text-xl">{goal ? goal - count : 0}</b>
               <p>Left</p>
             </div>
@@ -67,7 +67,7 @@ export default function Dashboard() {
               onClick={handleClick}
               type="button"
               disabled={goal ? goal - count === 0 : true}
-              className="inline-block disabled:opacity-60 rounded bg-cyan-700 px-8 py-14 text-sm font-medium uppercase leading-normal text-white shadow-cyan-3 transition duration-150 ease-in-out hover:bg-cyan-accent-600 hover:shadow-cyan-2 focus:bg-cyan-accent-600 focus:shadow-cyan-2 focus:outline-none focus:ring-0 active:bg-cyan-600 active:shadow-cyan-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+              className="inline-block disabled:opacity-60 rounded bg-cyan-700 px-14 py-20 text-sm font-medium uppercase leading-normal text-white shadow-cyan-3 transition duration-150 ease-in-out hover:bg-cyan-accent-600 hover:shadow-cyan-2 focus:bg-cyan-accent-600 focus:shadow-cyan-2 focus:outline-none focus:ring-0 active:bg-cyan-600 active:shadow-cyan-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
             >
               Press me
             </button>
